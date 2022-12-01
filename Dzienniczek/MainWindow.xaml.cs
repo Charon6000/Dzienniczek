@@ -288,7 +288,7 @@ namespace Dzienniczek
 
         private void Uczniowie_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (Uczniowie.SelectedIndex < 0)
+            if (Uczniowie.SelectedIndex < 0 || zkoly.SelectedIndex < 0 || Klasy.SelectedIndex < 0)
                 return;
 
             Text.Text = "";
